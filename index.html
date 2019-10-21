@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Počasí</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="css/weather-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Počasí</h1>
+
+  šew <div class="weather">
+
+    <div class="weather__current">
+      <h2 class="weather__city" id="mesto">
+        --
+      </h2>
+
+      <div class="weather__inner weather__inner--center">
+        <div class="weather__section weather__section--temp">
+          <span class="weather__temp-value" id="teplota">--</span>
+          <span class="weather__temp-unit">°C</span>
+          <div class="weather__description" id="popis">--</div>
+        </div>
+        <div class="weather__section weather__section--icon" id="ikona">
+          --
+        </div>
+      </div>
+
+      <div class="weather__inner">
+        <div class="weather__section">
+          <h3 class="weather__title">Vítr</h3>
+          <div class="weather__value">
+            <span id="vitr">--</span> km/h
+          </div>
+        </div>
+        <div class="weather__section">
+          <h3 class="weather__title">Vlhkost</h3>
+          <div class="weather__value">
+            <span id="vlhkost">--</span> %
+          </div>
+        </div>
+      </div>
+
+      <div class="weather__inner">
+        <div class="weather__section">
+          <h3 class="weather__title">Východ slunce</h3>
+          <div class="weather__value">
+            <span id="vychod">--</span>
+          </div>
+        </div>
+        <div class="weather__section">
+          <h3 class="weather__title">Západ slunce</h3>
+          <div class="weather__value">
+            <span id="zapad">--</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="weather__forecast" id="predpoved">
+
+    </div>
+
+  </div>
+
+  <script src="dist/app.bundle.js"></script>
+
+</body>
+
+</html>
